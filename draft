@@ -1,0 +1,1 @@
+aws lambda add-permission   --function-name "arn:aws:lambda:us-east-1:666680140343:function:lambda-demo-b2002:${stageVariables.env}"   --source-arn "arn:aws:execute-api:us-east-1:666680140343:pdlsx5ll00/*/POST/"   --principal apigateway.amazonaws.com   --statement-id aa5faf41-8143-49e1-9a56-db4cfeeb137a   --action lambda:InvokeFunction
